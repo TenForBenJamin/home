@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="main.css">
+<script src="js/allusers.json"></script>
+<script src="js/Check login.js"></script>
+
+<script src="js/jquery-3.2.1.js"></script>
+<link rel="stylesheet" type="text/css" href="BootMeister/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FW flcss.css">
+    <script src="js/louder.js"></script>
+    <script type="text/javascript" src="js/FW formlog.js"></script>
+
+<style>
+
+	#astro
+	{
+
+		height:400px;
+		width:500px;
+		border:5px solid beige;
+		float:right;
+		padding:2px;
+		display:none;
+	}
+
+	#lp
+	{
+		height:400px;
+		width:500px;
+		border:5px solid beige;
+		float:right;
+		padding:2px;
+		margin-right: 3vw;
+		
+
+
+	}
+	#lpc
+	{
+		color: white;
+		height:10vh;
+		width:30vw;
+		border:none;
+		float:right;
+		padding:2px;
+		margin-right: 30vw;
+
+	}
+	#WelcomeText{
+		
+		visibility: hidden; 
+	}
+	#nosuser2{
+
+		display:none;
+	}
+	#LoginB1{
+		display:none;
+	}
+	body {
+	   background-image: url("img/TCSgymNo.jpg");
+	   background-color: #a71010;;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+	#natasha{
+		display:none;
+	}
+
+	    @media screen and (min-width: 481px) 
+	    {
+		    body {
+		        
+		        background-image: url("img/ArsenalClass.jpg");
+		        background-color: #a71010;
+
+		    }
+		    #lp
+				{
+					height:50vh;
+					width:80vw;
+					border:5px solid beige;
+					float:right;
+					padding:2vw;
+					margin: 3vw;
+					
+					
+
+				}
+				#lpc
+				{
+					color: white;
+					height:10vh;
+					width:80vw;
+					border:none;
+					float:right;
+					padding:2vw;
+					margin: 3vw;
+
+				}
+	    }
+
+	@media screen and (min-width: 1180px) {
+	    body {
+	        background-color: #a71010;
+	        background-image: none;
+
+	    }
+	}
+
+
+</style>
+
+<body id="Ramo" onload="vaishakh()">
+<title> Arsenal World</title>
+
+
+<button onclick="starter()" id="LoginB1" > Login Starter</button>
+<div id="WelcomeText">
+<p >HI  <span id="user"> </span>
+
+</p>
+Welcome to the Arsenal World
+</div>
+<form name="frmRegister" method="post"  id="natasha" onsubmit=""> 
+
+ 	<fieldset>
+	  	<div id="HeaderError" >Your Entry must be at least 6 characters long.  Please try again.</div>
+	 	 <div>    <label for="txtUserName" class="brenner">Username:</label> 
+	 	<input type="text" name="txtUserName" id="txtUserName" size="12" /><span id="UsernameError" class="message"></span>  </div>
+	 	 <div>    <label for="txtPassword" class="brenner">Password: </label>  
+	 	   <input type="password" name="txtPassword" id="txtPassword" size="12" />  <span    id="PwdError" class="message"></span> </div> 
+	 	 <div>   
+	      <span    id="CPwdError"   class="message"></span> </div>
+	 	  <div >  
+	 	    <input type="button" value="Log in" id="psycho" class="btn btn-success btn-lg" onclick="starter()">
+	 	     &nbsp&nbsp </div>
+
+	 	     </form>
+    </fieldset>
+</form>
+
+<img src="img/KnowledgeMoneyBalance.jpeg" alt="anda omelette" id="astro">
+<marquee id="nosuser2">
+<h1> Hi <span <span id="bottomMQ"> </span> Welcome to Arsenal World </h1>s
+</marquee>
+
+
+<a href="FPL\HoMe.html" class="btn btn-danger btn-lg" id="MoviesB"> FPL-Home</a>
+
+
+<a href="TrainingTurf\css\Heimseite.html" class="btn btn-success btn-lg">CSS-HeimSeite</a>
+
+</body>
+</head>
+</html>
+
+
