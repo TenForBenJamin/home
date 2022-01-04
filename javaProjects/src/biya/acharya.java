@@ -30,5 +30,16 @@ public class acharya {
 		then().log().all().assertThat().statusCode(404);
 	}
 	
+	@Parameters({"a"})
+	@Test
+	public void weatherWithMetrics (String a)
+	{
+		RestAssured.baseURI ="https://api.openweathermap.org";
+		given().log().all().
+		queryParam("q", a).queryParam("appid", "2b1fd2d7f77ccf1b7de9b441571b39b8").queryParam("units", "metric").
+		when().get("data/2.5/weather").
+		then().log().all().assertThat().statusCode(200);
+	}
+	
 	
 }

@@ -3,7 +3,6 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      
       <class name="biya.acharya">
       
       	<methods>
@@ -14,7 +13,7 @@
       		</methods>
       </class>
       
-      <class name="afcon.cameroon"></class>
+      <class name="afcon.cameroon"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
