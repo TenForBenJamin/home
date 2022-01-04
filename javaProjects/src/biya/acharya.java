@@ -20,7 +20,15 @@ public class acharya {
 		then().log().all().assertThat().statusCode(200);
 	}
 	
-	
+	@Test
+	public void negativeTesting404 ()
+	{
+		RestAssured.baseURI ="https://api.openweathermap.org";
+		given().log().all().
+		queryParam("q", "farid").queryParam("appid", "2b1fd2d7f77ccf1b7de9b441571b39b8").queryParam("units", "metric").
+		when().get("data/2.5/weather").
+		then().log().all().assertThat().statusCode(404);
+	}
 	
 	
 }
