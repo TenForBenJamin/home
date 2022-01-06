@@ -15,19 +15,19 @@
       <class name="afcon.cameroon">
       
       		<methods>
-	      		<parameter name="gb" value="perth"></parameter>
+	      		<parameter name="gb" value="perth,gb"></parameter>
 	      		<include name="SameCityGB"></include>
 	        </methods>
       		<methods>
-	      		<parameter name="us" value="perth"></parameter>
+	      		<parameter name="us" value="perth,us"></parameter>
 	      		<include name="SameCityUS"></include>
       		</methods>
       		<methods>
-	      		<parameter name="ca" value="perth"></parameter>
+	      		<parameter name="ca" value="perth,ca"></parameter>
 	      		<include name="SameCityCA"></include>
       		</methods>
       		<methods>
-	      		<parameter name="au" value="perth"></parameter>
+	      		<parameter name="au" value="perth,au"></parameter>
 	      		<include name="SameCityAU"></include>
       		</methods>
       		
