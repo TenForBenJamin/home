@@ -117,8 +117,10 @@ public class cameroon {
 				 System.out.println("exceptions are available");
 				 
 				 driver.quit();
-				 Assert.assertEquals("tum", "ko");
+				 //Assert.assertEquals("tum", "ko");
+				 Assert.assertEquals("tum", "ko", "na bhul payenge");
 				 // cd C:/\git/\homie/\home
+				 
 
 			 }
 		}
