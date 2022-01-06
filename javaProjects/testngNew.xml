@@ -15,9 +15,9 @@
       <class name="afcon.cameroon">
       
       	<methods>
-      		<parameter name="a" value="St. Petersberg"></parameter>
+      		<parameter name="a" value="tarif"></parameter>
       		
-      			<include name="WeatherAppParameterized"></include>
+      			
       			
       		</methods>
       </class>

@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -114,8 +115,11 @@ public class cameroon {
 			 catch(Exception e)
 			 {
 				 System.out.println("exceptions are available");
-				 //assert.
+				 
 				 driver.quit();
+				 Assert.assertEquals("tum", "ko");
+				 // cd C:/\git/\homie/\home
+
 			 }
 		}
 	
