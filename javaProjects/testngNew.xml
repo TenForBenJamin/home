@@ -14,10 +14,26 @@
       </class>
       <class name="afcon.cameroon">
       
-      	<methods>
-      		<parameter name="a" value="tarif"></parameter>
+      		<methods>
+	      		<parameter name="gb" value="perth"></parameter>
+	      		<include name="SameCityGB"></include>
+	        </methods>
+      		<methods>
+	      		<parameter name="us" value="perth"></parameter>
+	      		<include name="SameCityUS"></include>
+      		</methods>
+      		<methods>
+	      		<parameter name="ca" value="perth"></parameter>
+	      		<include name="SameCityCA"></include>
+      		</methods>
+      		<methods>
+	      		<parameter name="au" value="perth"></parameter>
+	      		<include name="SameCityAU"></include>
+      		</methods>
       		
-      			
+      		<methods>
+      		<exclude name="WeatherAppParameterized"></exclude>
+      		<exclude name="weatherWithMetrics"></exclude>	
       			
       		</methods>
       </class>
@@ -25,7 +41,7 @@
     </classes>
   </test> <!-- Te
   
-  
+  SameCityGB
   <include name="weatherWithMetrics"></include>
   <include name="alag"></include>
   <include name="WeatherAppParameterized"></include>
