@@ -9,11 +9,25 @@
       		<parameter name="a" value="St. John's"></parameter>
       		
       			<include name="alag"></include>
-      			<include name="weatherWithMetrics"></include>
+      			
+      		</methods>
+      </class>
+      <class name="afcon.cameroon">
+      
+      	<methods>
+      		<parameter name="a" value="St. Petersberg"></parameter>
+      		
+      			<include name="WeatherAppParameterized"></include>
+      			
       		</methods>
       </class>
       
-      <class name="afcon.cameroon"/>
     </classes>
-  </test> <!-- Test -->
+  </test> <!-- Te
+  
+  
+  <include name="weatherWithMetrics"></include>
+  <include name="alag"></include>
+  <include name="WeatherAppParameterized"></include>
+  st -->
 </suite> <!-- Suite -->
