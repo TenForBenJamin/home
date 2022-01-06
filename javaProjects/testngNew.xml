@@ -3,16 +3,32 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="biya.acharya">
       
+      <class name="afcon.guinea">
+      		<parameter name="a" value="liverpool"></parameter>
+      		<methods>
+	      		
+	      		
+	        </methods>
+      </class>
+    </classes>
+  </test> <!-- Te
+  
+  SameCityGB
+  <include name="weatherWithMetrics"></include>
+  <include name="alag"></include>
+  <include name="WeatherAppParameterized"></include>
+  
+  
+  <class name="biya.acharya">
       	<methods>
       		<parameter name="a" value="St. John's"></parameter>
-      		
       			<include name="alag"></include>
-      			
       		</methods>
       </class>
-      <class name="afcon.cameroon">
+  st -->
+</suite> <!--
+<class name="afcon.cameroon">
       
       		<methods>
 	      		<parameter name="gb" value="perth,gb"></parameter>
@@ -37,13 +53,4 @@
       			
       		</methods>
       </class>
-      
-    </classes>
-  </test> <!-- Te
-  
-  SameCityGB
-  <include name="weatherWithMetrics"></include>
-  <include name="alag"></include>
-  <include name="WeatherAppParameterized"></include>
-  st -->
-</suite> <!-- Suite -->
+ Suite -->
