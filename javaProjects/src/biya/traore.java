@@ -119,5 +119,29 @@ public class traore {
 		when().get("data/2.5/weather").
 		then().log().all().assertThat().statusCode(200);
 	}
+	
+	@Parameters({"siu"})
+	@Test
+	public void sameCityAPI_PK (String siu)
+	{
+		siu=siu +",PK";
+		RestAssured.baseURI ="https://api.openweathermap.org";
+		given().log().all().
+		queryParam("q", siu).queryParam("appid", "2b1fd2d7f77ccf1b7de9b441571b39b8").queryParam("units", "metric").
+		when().get("data/2.5/weather").
+		then().log().all().assertThat().statusCode(200);
+	}
+	
+	@Parameters({"siu"})
+	@Test
+	public void sameCityAPI_BD (String siu)
+	{
+		siu=siu +",BD";
+		RestAssured.baseURI ="https://api.openweathermap.org";
+		given().log().all().
+		queryParam("q", siu).queryParam("appid", "2b1fd2d7f77ccf1b7de9b441571b39b8").queryParam("units", "metric").
+		when().get("data/2.5/weather").
+		then().log().all().assertThat().statusCode(200);
+	}
 
 }

@@ -3,17 +3,11 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="biya.traore">
-        <parameter name="siu" value="dalhousie"/>
+      <class name="biya.acharya">
         <methods>
-          <include name="sameCityAPI_UK" invocation-numbers="0"/>
-          <include name="sameCityAPI_SL" invocation-numbers="0"/>
-          <include name="sameCityAPI_AU" invocation-numbers="0"/>
-          <include name="sameCityAPI_ZA" invocation-numbers="0"/>
-          <include name="sameCityAPI_US" invocation-numbers="0"/>
-          <include name="sameCityAPI_NZ" invocation-numbers="0"/>
+          <include name="Metrics_locId"/>
         </methods>
-      </class> <!-- biya.traore -->
+      </class> <!-- biya.acharya -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

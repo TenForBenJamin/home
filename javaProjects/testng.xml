@@ -4,9 +4,12 @@
   <test thread-count="5" name="Test">
     <classes>
       
-      <class name="biya.traore">
+      <class name="biya.acharya">
       	<methods>
-      		<parameter name="siu" value="dalhousie"></parameter>
+      		
+      			<include name="Metrics_coords"></include>
+      			<include name="Metrics_zip"></include>
+      			<include name="Metrics_locId"></include>
       		</methods>
       </class>
       
@@ -23,8 +26,15 @@
   
   st -->
 </suite> <!-- Su
-
+<parameter name="siu" value="liverpool"></parameter>
 <include name="alag"></include>
       			<include name="weatherWithMetrics"></include>
-      			
+      			sameCityAPI_US
+      			<exclude name="sameCityAPI_IN"></exclude>
+      			<exclude name="sameCityAPI_SL"></exclude>
+      			<exclude name="sameCityAPI_PK"></exclude>
+      			<exclude name="sameCityAPI_IN"></exclude>
+      			<exclude name="sameCityAPI_SL"></exclude>
+      			<exclude name="sameCityAPI_PK"></exclude>
+      			<exclude name="sameCityAPI_BD"></exclude>
       			ite -->
