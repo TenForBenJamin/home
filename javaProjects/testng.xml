@@ -4,11 +4,9 @@
   <test thread-count="5" name="Test">
     <classes>
       
-      <class name="biya.acharya">
+      <class name="biya.traore">
       	<methods>
-      		<parameter name="a" value="kasol"></parameter>
-      		
-      			
+      		<parameter name="siu" value="dalhousie"></parameter>
       		</methods>
       </class>
       

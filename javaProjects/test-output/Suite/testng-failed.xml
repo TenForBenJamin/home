@@ -3,16 +3,17 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="afcon.cameroon">
+      <class name="biya.traore">
+        <parameter name="siu" value="dalhousie"/>
         <methods>
-          <include name="SeBasicWeatherApp"/>
+          <include name="sameCityAPI_UK" invocation-numbers="0"/>
+          <include name="sameCityAPI_SL" invocation-numbers="0"/>
+          <include name="sameCityAPI_AU" invocation-numbers="0"/>
+          <include name="sameCityAPI_ZA" invocation-numbers="0"/>
+          <include name="sameCityAPI_US" invocation-numbers="0"/>
+          <include name="sameCityAPI_NZ" invocation-numbers="0"/>
         </methods>
-      </class> <!-- afcon.cameroon -->
-      <class name="biya.acharya">
-        <methods>
-          <include name="weatherWithMetrics"/>
-        </methods>
-      </class> <!-- biya.acharya -->
+      </class> <!-- biya.traore -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
