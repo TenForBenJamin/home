@@ -5,16 +5,28 @@
     <classes>
       
       <class name="biya.acharya">
-      
       	<methods>
-      		<parameter name="a" value="St. John's"></parameter>
+      		<parameter name="a" value="kasol"></parameter>
       		
-      			<include name="alag"></include>
-      			<include name="weatherWithMetrics"></include>
+      			
       		</methods>
       </class>
       
-      <class name="afcon.cameroon"></class>
+       
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> <!-- Te
+  <class name="afcon.guinea">
+      		<parameter name="a" value="nottingham"></parameter>
+      		<methods>
+	      		
+	      		
+	        </methods>
+      </class>
+  
+  st -->
+</suite> <!-- Su
+
+<include name="alag"></include>
+      			<include name="weatherWithMetrics"></include>
+      			
+      			ite -->

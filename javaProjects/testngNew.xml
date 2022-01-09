@@ -5,14 +5,18 @@
     <classes>
       
       <class name="afcon.guinea">
-      		<parameter name="a" value="liverpool"></parameter>
+      		<parameter name="a" value="nottingham"></parameter>
       		<methods>
 	      		
 	      		
 	        </methods>
       </class>
     </classes>
-  </test> <!-- Te
+  </test> <!-- 
+
+Git Path 
+					cd C:/\git/\homie/\home
+				  C:/\git/\turf/\kas/\TenForBen.github.io
   
   SameCityGB
   <include name="weatherWithMetrics"></include>

@@ -1,5 +1,7 @@
 package afcon;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,21 +11,27 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class guinea {
+	
+	Logger Log = LogManager.getLogger(guinea.class.getName());
 
 	@Parameters({"a"})
 	@Test
 	public void SameCityGB(String a) throws InterruptedException 
 	{
-		System.out.println("------------Test3------------------this test is to test input value with City,countryCode------------------------------------------------");
+		//System.out.println("------------Test1------------------this test is to test input value with City,countryCode------------------------------------------------");
+		Log.info("------------Test1------------------this test is to test input value with City,countryCode------------------------------------------------");
 		//frameworktest fwt = new frameworktest();
 		System.setProperty("webdriver.chrome.driver","C:\\Mava\\chromedriver.exe"); // declaring the chrome driver locatoion
 		WebDriver driver= new ChromeDriver();// initializing chrome driver
 		//driver.manage().deleteAllCookies(); // deleting all cookies
-		driver.manage().window().maximize();		// maximizing the window
+		driver.manage().window().maximize();	
+		// maximizing the windo
+		Log.debug("some shit is going down here");
 		String place = a;
 		place=place +",GB";			// earlier param
 		String uri= "https://tenforben.github.io/FPL/vannilaWeatherApp/index.html";
-		System.out.println("URL formed -" +uri);
+		//System.out.println("URL formed -" +uri);
+		Log.info("URL formed terst 1-" +uri);
 		driver.get(uri);
 		String brooks =place;
 		String searchReq =brooks;
@@ -52,19 +60,19 @@ public class guinea {
 			String Coords =result[1];//location
 			String nation =result[2]; // country codeq
 			System.out.println("location is " + Coords +" Lat/Longitude ");
-			//fwt.quitbrowser(driver);
+			//fwt.quitbrowser(driver);S
 			driver.quit();
 			 
 		 }
 		 catch(Exception e)
 		 {
-			 System.out.println("exceptions are available");
+			 //System.out.println("exceptions are available");
 			 
 			 driver.quit();
 			 //Assert.assertEquals("tum", "ko");
 			 Assert.assertEquals("tum", "ko", "na bhul payenge");
 			 // cd C:/\git/\homie/\home
-			 
+			Log.fatal("some error has to be printed here .. exceptions are available   ööööööööööööööööööö           bruv.. you ARE SHIT man... fuck" );
 
 		 }
 	}
@@ -75,7 +83,7 @@ public class guinea {
 @Test
 public void samecityUS(String a) throws InterruptedException 
 	{
-		System.out.println("------------Test3------------------this test is to test input value with City,countryCode------------------------------------------------");
+		System.out.println("------------Test2------------------this test is to test input value with City,countryCode------------------------------------------------");
 		//frameworktest fwt = new frameworktest();
 		System.setProperty("webdriver.chrome.driver","C:\\Mava\\chromedriver.exe"); // declaring the chrome driver locatoion
 		WebDriver driver= new ChromeDriver();// initializing chrome driver
@@ -195,7 +203,7 @@ public void samecityCA(String a) throws InterruptedException
 @Test
 public void samecityAU(String a) throws InterruptedException 
 	{
-		System.out.println("------------Test3------------------this test is to test input value with City,countryCode------------------------------------------------");
+		System.out.println("------------Test4------------------this test is to test input value with City,countryCode------------------------------------------------");
 		//frameworktest fwt = new frameworktest();
 		System.setProperty("webdriver.chrome.driver","C:\\Mava\\chromedriver.exe"); // declaring the chrome driver locatoion
 		WebDriver driver= new ChromeDriver();// initializing chrome driver
