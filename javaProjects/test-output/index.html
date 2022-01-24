@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\git\homie\home\javaProjects\testng.xml</span>
+                    <span>C:\git\homie\home\javaProjects\testngJson.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,17 +104,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="biya.acharya" class="method navigator-link" hash-for-method="Metrics_coords">Metrics_coords</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="biya.acharya" class="method navigator-link" hash-for-method="Metrics_locId">Metrics_locId</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="biya.acharya" class="method navigator-link" hash-for-method="Metrics_zip">Metrics_zip</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="biya.acharya" class="method navigator-link" hash-for-method="coordsLines(80)">coordsLines(80)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -137,23 +127,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Metrics_coords">
-                  </a> <!-- Metrics_coords -->
-                  <span class="method-name">Metrics_coords</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Metrics_locId">
-                  </a> <!-- Metrics_locId -->
-                  <span class="method-name">Metrics_locId</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Metrics_zip">
-                  </a> <!-- Metrics_zip -->
-                  <span class="method-name">Metrics_zip</span>
+                  <a name="coordsLines(80)">
+                  </a> <!-- coordsLines(80) -->
+                  <span class="method-name">coordsLines</span>
+                  <span class="parameters">(80)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -161,7 +138,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\git\homie\home\javaProjects\testng.xml</span>
+            <span class="header-content">C:\git\homie\home\javaProjects\testngJson.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -171,10 +148,9 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;biya.acharya&quot;&gt;
+        &lt;parameter name=&quot;lines&quot; value=&quot;80&quot;/&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;Metrics_coords&quot;/&gt;
-          &lt;include name=&quot;Metrics_zip&quot;/&gt;
-          &lt;include name=&quot;Metrics_locId&quot;/&gt;
+          &lt;include name=&quot;coordsLines&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- biya.acharya --&gt;
     &lt;/classes&gt;
@@ -216,24 +192,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Metrics_coords')
+data.setCell(0, 1, 'coordsLines')
 data.setCell(0, 2, 'biya.acharya')
-data.setCell(0, 3, 2317);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Metrics_zip')
-data.setCell(1, 2, 'biya.acharya')
-data.setCell(1, 3, 354);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Metrics_locId')
-data.setCell(2, 2, 'biya.acharya')
-data.setCell(2, 3, 348);
+data.setCell(0, 3, 7120);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -248,7 +216,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -256,7 +224,13 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">alag</span>
                 <br/>
+                <span class="ignored-method-name">Metrics_zip</span>
+                <br/>
                 <span class="ignored-method-name">weatherWithMetrics</span>
+                <br/>
+                <span class="ignored-method-name">Metrics_locId</span>
+                <br/>
+                <span class="ignored-method-name">Metrics_coords</span>
                 <br/>
                 <span class="ignored-method-name">negativeTesting404</span>
                 <br/>
@@ -272,16 +246,8 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">biya.acharya</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">Metrics_coords</span>
+                <span class="method-name">coordsLines(80)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Metrics_zip</span>
-                <span class="method-start">2321 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Metrics_locId</span>
-                <span class="method-start">2679 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

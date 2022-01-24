@@ -71,4 +71,18 @@ public class acharya {
 	}
 	
 	
+	@Parameters({"lines"})
+	@Test
+	public void coordsLines (String lines)
+	{
+		
+		RestAssured.baseURI ="https://api.openweathermap.org";
+		given().log().all().
+		queryParam("lat", "12").queryParam("lon", lines).queryParam("appid", "2b1fd2d7f77ccf1b7de9b441571b39b8").queryParam("units", "metric").
+		when().get("data/2.5/weather").
+		then().log().all().assertThat().statusCode(200);
+	}
+	
+	
+	
 }
