@@ -6,9 +6,9 @@
       
       <class name="biya.acharya">
       	<methods>
-      			<parameter name="lines" value="77"></parameter>
+      			<parameter name="lines" value="75"></parameter>
       			<include name="coordsLinesLoops"></include>
-	      		
+	      		<include name="coordsLinesLoopsLangDE"></include>
 	      		
 	        </methods>
       </class>

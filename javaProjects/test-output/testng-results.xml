@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="7" total="8" passed="1" failed="0" skipped="0">
+<testng-results ignored="7" total="9" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-25T01:03:53 CET" name="Suite" finished-at="2022-01-25T01:03:56 CET" duration-ms="2753">
+  <suite started-at="2022-01-25T16:34:00 CET" name="Suite" finished-at="2022-01-25T16:34:04 CET" duration-ms="4341">
     <groups>
     </groups>
-    <test started-at="2022-01-25T01:03:53 CET" name="Test" finished-at="2022-01-25T01:03:56 CET" duration-ms="2753">
+    <test started-at="2022-01-25T16:34:00 CET" name="Test" finished-at="2022-01-25T16:34:04 CET" duration-ms="4341">
       <class name="biya.acharya">
-        <test-method signature="coordsLinesLoops(java.lang.String)[pri:0, instance:biya.acharya@e15b7e8]" started-at="2022-01-25T01:03:53 CET" name="coordsLinesLoops" finished-at="2022-01-25T01:03:56 CET" duration-ms="2717" status="PASS">
+        <test-method signature="coordsLinesLoops(java.lang.String)[pri:0, instance:biya.acharya@1b2abca6]" started-at="2022-01-25T16:34:00 CET" name="coordsLinesLoops" finished-at="2022-01-25T16:34:04 CET" duration-ms="3838" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[77]]>
+                <![CDATA[75]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- coordsLinesLoops -->
+        <test-method signature="coordsLinesLoopsLangDE(java.lang.String)[pri:0, instance:biya.acharya@1b2abca6]" started-at="2022-01-25T16:34:04 CET" name="coordsLinesLoopsLangDE" finished-at="2022-01-25T16:34:04 CET" duration-ms="452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[75]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- coordsLinesLoopsLangDE -->
       </class> <!-- biya.acharya -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

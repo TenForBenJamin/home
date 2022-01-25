@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="biya.acharya" class="method navigator-link" hash-for-method="coordsLinesLoops(77)">coordsLinesLoops(77)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="biya.acharya" class="method navigator-link" hash-for-method="coordsLinesLoops(75)">coordsLinesLoops(75)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="biya.acharya" class="method navigator-link" hash-for-method="coordsLinesLoopsLangDE(75)">coordsLinesLoopsLangDE(75)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,10 +132,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="coordsLinesLoops(77)">
-                  </a> <!-- coordsLinesLoops(77) -->
+                  <a name="coordsLinesLoops(75)">
+                  </a> <!-- coordsLinesLoops(75) -->
                   <span class="method-name">coordsLinesLoops</span>
-                  <span class="parameters">(77)</span>
+                  <span class="parameters">(75)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="coordsLinesLoopsLangDE(75)">
+                  </a> <!-- coordsLinesLoopsLangDE(75) -->
+                  <span class="method-name">coordsLinesLoopsLangDE</span>
+                  <span class="parameters">(75)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -148,9 +161,10 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;biya.acharya&quot;&gt;
-        &lt;parameter name=&quot;lines&quot; value=&quot;77&quot;/&gt;
+        &lt;parameter name=&quot;lines&quot; value=&quot;75&quot;/&gt;
         &lt;methods&gt;
           &lt;include name=&quot;coordsLinesLoops&quot;/&gt;
+          &lt;include name=&quot;coordsLinesLoopsLangDE&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- biya.acharya --&gt;
     &lt;/classes&gt;
@@ -192,16 +206,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'coordsLinesLoops')
 data.setCell(0, 2, 'biya.acharya')
-data.setCell(0, 3, 2717);
+data.setCell(0, 3, 3838);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'coordsLinesLoopsLangDE')
+data.setCell(1, 2, 'biya.acharya')
+data.setCell(1, 3, 452);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -248,8 +266,12 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">biya.acharya</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">coordsLinesLoops(77)</span>
+                <span class="method-name">coordsLinesLoops(75)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">coordsLinesLoopsLangDE(75)</span>
+                <span class="method-start">3844 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

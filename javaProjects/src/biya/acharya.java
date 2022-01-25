@@ -88,7 +88,7 @@ public class acharya {
 	@Test
 	public void coordsLinesLoops (String lines)
 	{
-		int latt=16;
+		double latt=10.2;
 		RestAssured.baseURI ="https://api.openweathermap.org";
 		String jagah =
 		given().log().all().
@@ -99,7 +99,26 @@ public class acharya {
 		JsonPath js = new JsonPath(jagah);
 		String asliJagah=js.getString("name");
 		
+		System.out.println("extracted place for  latitude " +latt +"  and longitude  " +lines +" is " +asliJagah);
+	}
+	
+	@Parameters({"lines"})
+	@Test
+	public void coordsLinesLoopsLangDE (String lines)
+	{
+		double latt=11.2;
+		RestAssured.baseURI ="https://api.openweathermap.org";
+		String jagah =
+		given().log().all().
+		queryParam("lat", latt).queryParam("lon", lines).queryParam("appid", "2b1fd2d7f77ccf1b7de9b441571b39b8").queryParam("lang", "de").queryParam("units", "metric").
+		when().get("data/2.5/weather").
+		then().assertThat().statusCode(200).extract().response().asString();
+		
+		JsonPath js = new JsonPath(jagah);
+		String asliJagah=js.getString("name");
+		
 		System.out.println("extracted place for  latitude " +latt +"  and longitude  " +lines +"is " +asliJagah);
+		
 	}
 	
 	
