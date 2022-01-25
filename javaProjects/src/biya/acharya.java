@@ -88,13 +88,13 @@ public class acharya {
 	@Test
 	public void coordsLinesLoops (String lines)
 	{
-		int latt=15;
+		int latt=16;
 		RestAssured.baseURI ="https://api.openweathermap.org";
 		String jagah =
 		given().log().all().
 		queryParam("lat", latt).queryParam("lon", lines).queryParam("appid", "2b1fd2d7f77ccf1b7de9b441571b39b8").queryParam("units", "metric").
 		when().get("data/2.5/weather").
-		then().log().all().assertThat().statusCode(200).extract().response().asString();
+		then().assertThat().statusCode(200).extract().response().asString();
 		
 		JsonPath js = new JsonPath(jagah);
 		String asliJagah=js.getString("name");
