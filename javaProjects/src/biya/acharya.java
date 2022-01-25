@@ -8,6 +8,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 public class acharya {
 
 	@Test
@@ -83,6 +84,23 @@ public class acharya {
 		then().log().all().assertThat().statusCode(200);
 	}
 	
+	@Parameters({"lines"})
+	@Test
+	public void coordsLinesLoops (String lines)
+	{
+		int latt=15;
+		RestAssured.baseURI ="https://api.openweathermap.org";
+		String jagah =
+		given().log().all().
+		queryParam("lat", latt).queryParam("lon", lines).queryParam("appid", "2b1fd2d7f77ccf1b7de9b441571b39b8").queryParam("units", "metric").
+		when().get("data/2.5/weather").
+		then().log().all().assertThat().statusCode(200).extract().response().asString();
+		
+		JsonPath js = new JsonPath(jagah);
+		String asliJagah=js.getString("name");
+		
+		System.out.println("extracted place for  latitude " +latt +"  and longitude  " +lines +"is " +asliJagah);
+	}
 	
 	
 }

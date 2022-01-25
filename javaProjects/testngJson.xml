@@ -6,8 +6,8 @@
       
       <class name="biya.acharya">
       	<methods>
-      			<parameter name="lines" value="80"></parameter>
-      			<include name="coordsLines"></include>
+      			<parameter name="lines" value="77"></parameter>
+      			<include name="coordsLinesLoops"></include>
 	      		
 	      		
 	        </methods>
