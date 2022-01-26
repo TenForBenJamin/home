@@ -4,8 +4,9 @@
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="biya.acharya">
+        <parameter name="lines" value="75"/>
         <methods>
-          <include name="Metrics_locId"/>
+          <include name="complexJsonParser" invocation-numbers="0"/>
         </methods>
       </class> <!-- biya.acharya -->
     </classes>

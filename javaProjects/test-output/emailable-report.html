@@ -9,11 +9,23 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,341</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">3,675</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">biya.acharya</td><td><a href="#m0">coordsLinesLoops</a></td><td rowspan="1">1643124840251</td><td rowspan="1">3838</td></tr><tr class="passedeven"><td><a href="#m1">coordsLinesLoopsLangDE</a></td><td rowspan="1">1643124844095</td><td rowspan="1">452</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">biya.acharya</td><td><a href="#m0">complexJsonParser</a></td><td rowspan="1">1643155686146</td><td rowspan="1">739</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">biya.acharya</td><td><a href="#m1">complexJsonParserHardCoded</a></td><td rowspan="1">1643155683242</td><td rowspan="1">2901</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">biya.acharya#coordsLinesLoops</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>75</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">biya.acharya#coordsLinesLoopsLangDE</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>75</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">biya.acharya#complexJsonParser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>75</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NumberFormatException: For input string: &quot;25.55&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:660)
+	at java.base/java.lang.Integer.parseInt(Integer.java:778)
+	at java_lang_Integer$parseInt.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.common.path.ObjectConverter.convertObjectTo(ObjectConverter.groovy:29)
+	at io.restassured.path.json.JsonPath.getInt(JsonPath.java:245)
+	at biya.acharya.complexJsonParser(acharya.java:161)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">biya.acharya#complexJsonParserHardCoded</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>75</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

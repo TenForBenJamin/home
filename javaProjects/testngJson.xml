@@ -7,11 +7,15 @@
       <class name="biya.acharya">
       	<methods>
       			<parameter name="lines" value="75"></parameter>
-      			<include name="coordsLinesLoops"></include>
-	      		<include name="coordsLinesLoopsLangDE"></include>
+      			<include name="complexJsonParserHardCoded"></include>
+	      		<include name="complexJsonParser"></include>
 	      		
 	        </methods>
       </class>
     </classes>
-  </test> <!-- Test -->
+  </test> <!-- T
+  
+  <include name="coordsLinesLoopsLangDEit "></include>
+  <include name="complexJsonParser"></include>
+  est -->
 </suite> <!-- Suite -->

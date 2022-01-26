@@ -2,6 +2,9 @@ package biya;
 
 
 import org.testng.annotations.Test;
+
+import files.payload;
+
 import static io.restassured.RestAssured.given;
 
 import org.testng.annotations.Parameters;
@@ -118,6 +121,46 @@ public class acharya {
 		String asliJagah=js.getString("name");
 		
 		System.out.println("extracted place for  latitude " +latt +"  and longitude  " +lines +"is " +asliJagah);
+		
+	}
+	
+	@Parameters({"lines"})
+	@Test
+	public void complexJsonParserHardCoded (String lines)
+	{
+		double latt=11.2;
+		RestAssured.baseURI ="https://api.openweathermap.org";
+		String jagah =
+		given().log().all().
+		queryParam("lat", latt).queryParam("lon", lines).queryParam("appid", "2b1fd2d7f77ccf1b7de9b441571b39b8").queryParam("lang", "de").queryParam("units", "metric").
+		when().get("data/2.5/weather").
+		then().assertThat().statusCode(200).extract().response().asString();
+		
+		JsonPath js = new JsonPath(payload.CoursePrice());
+		//String asliJagah=js.getString("name");
+		int count = js.getInt("courses.size()");
+		System.out.println("Couunt generated  " +count );
+		
+	}
+	
+	@Parameters({"lines"})
+	@Test
+	public void complexJsonParser (String lines)
+	{
+		double latt=11.2;
+		RestAssured.baseURI ="https://api.openweathermap.org";
+		String jagah =
+		given().log().all().
+		queryParam("lat", latt).queryParam("lon", lines).queryParam("appid", "2b1fd2d7f77ccf1b7de9b441571b39b8").queryParam("lang", "de").queryParam("units", "metric").
+		when().get("data/2.5/weather").
+		then().assertThat().statusCode(200).extract().response().asString();
+		
+		JsonPath js = new JsonPath(jagah);
+		String asliJagah=js.getString("name");
+		System.out.println("extracted place for  latitude " +latt +"  and longitude  " +lines +" is " +asliJagah);
+		//double count = js.getInt("main.temp");
+		double count = js.getDouble("main.temp");
+		System.out.println("currentTemp  " +count );
 		
 	}
 	
