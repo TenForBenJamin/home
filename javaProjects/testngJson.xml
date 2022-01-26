@@ -6,9 +6,9 @@
       
       <class name="biya.acharya">
       	<methods>
-      			<parameter name="lines" value="75"></parameter>
-      			<include name="complexJsonParserHardCoded"></include>
-	      		<include name="complexJsonParser"></include>
+      			<parameter name="lines" value="76.5"></parameter>
+      			
+	      		<include name="kerala"></include>
 	      		
 	        </methods>
       </class>
@@ -17,5 +17,6 @@
   
   <include name="coordsLinesLoopsLangDEit "></include>
   <include name="complexJsonParser"></include>
+  <include name="complexJsonParserHardCoded"></include>
   est -->
 </suite> <!-- Suite -->
