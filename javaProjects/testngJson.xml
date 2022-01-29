@@ -6,9 +6,10 @@
       
       <class name="biya.acharya">
       	<methods>
-      			<parameter name="lines" value="76.9"></parameter>
+      	<parameter name="lines" value="76.9"></parameter>
+      <parameter name="ilat" value="46.9"></parameter>
       			
-	      		<include name="kerala"></include>
+	      		<include name="latLoner"></include>
 	      		
 	        </methods>
       </class>
@@ -19,4 +20,11 @@
   <include name="complexJsonParser"></include>
   <include name="complexJsonParserHardCoded"></include>
   est -->
-</suite> <!-- Suite -->
+</suite> <!-- Sui
+
+<parameter name="lines" value="76.9"></parameter>
+      <parameter name="ilat" value="46.9"></parameter>
+      			
+	      		<include name="latLoner"></include>
+
+te -->
