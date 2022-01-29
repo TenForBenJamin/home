@@ -6,7 +6,7 @@
       
       <class name="biya.acharya">
       	<methods>
-      			<parameter name="lines" value="76.5"></parameter>
+      			<parameter name="lines" value="76.9"></parameter>
       			
 	      		<include name="kerala"></include>
 	      		

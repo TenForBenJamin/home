@@ -168,9 +168,10 @@ public class acharya {
 	@Test
 	public void kerala (String lines)
 	{
-		int lat=9;
-		
-		for(int i=lat;i<18;i++)
+		int lat=20;
+		int punkt=10;
+		int sbi=lat+punkt;
+		for(int i=lat;i<sbi;i++)
 		{
 			String latt=String.valueOf(i);
 			rutherford(latt,lines);
@@ -193,7 +194,7 @@ public class acharya {
 		System.out.println("extracted place for  latitude " +lat +"  and longitude  " +lon +" is " +asliJagah);
 		//double count = js.getInt("main.temp");
 		double count = js.getDouble("main.temp");
-		System.out.println("/n currentTemp   " +count );
+		System.out.println("/n currentTemp   "+ "\r\n" +count + "\r\n");
 		
 	}
 	
