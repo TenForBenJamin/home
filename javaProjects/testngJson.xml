@@ -7,10 +7,10 @@
       <class name="biya.acharya">
       	<methods>
       	<parameter name="lines" value="76.9"></parameter>
-      <parameter name="ilat" value="46.9"></parameter>
+      <parameter name="ilat" value="36.9"></parameter>
       			
 	      		<include name="latLoner"></include>
-	      		
+	      		<include name="kerala"></include>
 	        </methods>
       </class>
     </classes>

@@ -1,0 +1,68 @@
+Important links
+
+Jenkins login
+..\Java\jdk-11.0.14\bin\java  -jar jenkins.war --httpPort=8080
+
+
+
+profiles>
+  	<profile>
+  		<id>Regression</id>
+  			 <build>
+	    <pluginManagement>
+	      <plugins>
+	        <plugin>
+	          <groupId>org.apache.maven.plugins</groupId>
+	          <artifactId>maven-surefire-plugin</artifactId>
+	          <version>3.0.0-M5</version>
+	          <configuration>
+	          <suiteXmlFiles>
+	            <suiteXmlFile>testngNew.xml</suiteXmlFile>
+	          </suiteXmlFiles>
+	        </configuration>
+	        </plugin>
+	      </plugins>
+	    </pluginManagement>
+	  </build>
+  	</profile>
+    <profile>
+  		<id>Smoke</id>
+  			 <build>
+	    <pluginManagement>
+	      <plugins>
+	        <plugin>
+	          <groupId>org.apache.maven.plugins</groupId>
+	          <artifactId>maven-surefire-plugin</artifactId>
+	          <version>3.0.0-M5</version>
+	          <configuration>
+	          <suiteXmlFiles>
+	            <suiteXmlFile>testng.xml</suiteXmlFile>
+	          </suiteXmlFiles>
+	        </configuration>
+	        </plugin>
+	      </plugins>
+	    </pluginManagement>
+	  </build>
+  	</profile>
+  	<profile>
+  		<id>pushpa</id>
+  			 <build>
+	    <pluginManagement>
+	      <plugins>
+	        <plugin>
+	          <groupId>org.apache.maven.plugins</groupId>
+	          <artifactId>maven-surefire-plugin</artifactId>
+	          <version>3.0.0-M5</version>
+	          <configuration>
+	          <suiteXmlFiles>
+	            <suiteXmlFile>testngJson.xml</suiteXmlFile>
+	          </suiteXmlFiles>
+	        </configuration>
+	        </plugin>
+	      </plugins>
+	    </pluginManagement>
+	  </build>
+  	</profile>
+  </profiles>
+   
+  
