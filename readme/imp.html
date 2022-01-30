@@ -4,8 +4,35 @@ Jenkins login
 ..\Java\jdk-11.0.14\bin\java  -jar jenkins.war --httpPort=8080
 
 
+Scenario: Search Metric weather App
+    Given get the place "nischpur"
+    When check the response
+    Then copy the values 
+	
+	
+	@Given("^get the place \"([^\"]*)\"$")
+    public void get_the_place_something(String strArg1) throws Throwable {
+       
+        System.out.println("everybodies happy "  +strArg1); 
+    }
 
-profiles>
+    @When("^check the response$")
+    public void check_the_response() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^copy the values   $")
+    public void copy_the_values() throws Throwable {
+        throw new PendingException();
+    }
+
+    @And("^CTA$")
+    public void cta() throws Throwable {
+        throw new PendingException();
+    }
+
+
+<profiles>
   	<profile>
   		<id>Regression</id>
   			 <build>

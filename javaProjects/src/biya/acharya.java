@@ -223,7 +223,7 @@ public class acharya {
 		double count = js.getDouble("main.temp");
 		
 		System.out.println("\n");
-		System.out.println("                                currentTemp   "+ "\r\n" +count + "\r\n");
+		System.out.println("                                currentTemp   "+count + "\r\n");
 		
 	}
 	
