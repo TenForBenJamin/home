@@ -4,9 +4,10 @@
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="biya.acharya">
-        <parameter name="lines" value="75"/>
+        <parameter name="lines" value="56.9"/>
+        <parameter name="ilat" value="36"/>
         <methods>
-          <include name="complexJsonParser" invocation-numbers="0"/>
+          <include name="tenerLat" invocation-numbers="0"/>
         </methods>
       </class> <!-- biya.acharya -->
     </classes>

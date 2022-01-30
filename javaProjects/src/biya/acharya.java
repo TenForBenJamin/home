@@ -164,7 +164,7 @@ public class acharya {
 		
 	}
 	
-	@Parameters({"lines"})
+	@Parameters({"lines","ilat"})
 	@Test
 	public void kerala (String lines)
 	{
@@ -174,7 +174,8 @@ public class acharya {
 		for(int i=lat;i<sbi;i++)
 		{
 			String latt=String.valueOf(i);
-			rutherford(latt,lines);
+			//rutherford(latt,lines);
+			latLoner(latt,lines);
 		}
 		
 	}
@@ -223,6 +224,23 @@ public class acharya {
 		
 		System.out.println("\n");
 		System.out.println("                                currentTemp   "+ "\r\n" +count + "\r\n");
+		
+	}
+	
+	@Parameters({"lines","ilat"})
+	@Test
+	public void tenerLat (String ilat,String lines )
+	{
+		//int lat=20;
+		int lat=Integer.parseInt(ilat);
+		int punkt=10;
+		int sbi=lat+punkt;
+		for(int i=lat;i<sbi;i++)
+		{
+			String latt=String.valueOf(i);
+			//rutherford(latt,lines);
+			latLoner(latt,lines);
+		}
 		
 	}
 	
