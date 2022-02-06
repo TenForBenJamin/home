@@ -2,17 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+ 
     <classes>
-      
-      <class name="biya.acharya">
-      	<methods>
-      		
-      			<include name="Metrics_coords"></include>
-      			<include name="Metrics_zip"></include>
-      			<include name="Metrics_locId"></include>
-      		</methods>
+      	
+        <class name="afcon.cameroon">
+      		<parameter name="a" value="nottingham"></parameter>
+      		<methods>
+	      		
+	      		
+	        </methods>
       </class>
-      
        
     </classes>
   </test> <!-- Te
@@ -24,7 +23,19 @@
 	        </methods>
       </class>
   
-  st -->
+  st
+   <class name="biya.acharya">
+      	<methods>
+      		
+      			<include name="Metrics_coords"></include>
+      			<include name="Metrics_zip"></include>
+      			<include name="Metrics_locId"></include>
+      		</methods>
+      </class>
+      
+   -->
+  
+  
 </suite> <!-- Su
 <parameter name="siu" value="liverpool"></parameter>
 <include name="alag"></include>

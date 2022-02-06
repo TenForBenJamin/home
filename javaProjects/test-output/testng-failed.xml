@@ -3,13 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="biya.acharya">
-        <parameter name="lines" value="56.9"/>
-        <parameter name="ilat" value="36"/>
+      <class name="afcon.cameroon">
+        <parameter name="a" value="nottingham"/>
         <methods>
-          <include name="tenerLat" invocation-numbers="0"/>
+          <include name="MozsamecityAU"/>
         </methods>
-      </class> <!-- biya.acharya -->
+      </class> <!-- afcon.cameroon -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

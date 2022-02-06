@@ -4,10 +4,10 @@
   <test thread-count="5" name="Test">
     <classes>
       
-      <class name="afcon.guinea">
-      		<parameter name="a" value="nottingham"></parameter>
+      <class name="afcon.cameroon">
+      		<parameter name="au" value="St. John's"></parameter>
       		<methods>
-	      		
+	      		<include name="MozsamecityAU"></include>
 	      		
 	        </methods>
       </class>
@@ -22,7 +22,7 @@ Git Path
   <include name="weatherWithMetrics"></include>
   <include name="alag"></include>
   <include name="WeatherAppParameterized"></include>
-  
+  MozsamecityAU(String)
   
   <class name="biya.acharya">
       	<methods>
