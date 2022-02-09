@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
+<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-09T21:56:48 CET" name="Suite" finished-at="2022-02-09T21:56:50 CET" duration-ms="2798">
+  <suite started-at="2022-02-09T23:52:10 CET" name="Suite" finished-at="2022-02-09T23:52:13 CET" duration-ms="3114">
     <groups>
     </groups>
-    <test started-at="2022-02-09T21:56:48 CET" name="Test" finished-at="2022-02-09T21:56:50 CET" duration-ms="2798">
+    <test started-at="2022-02-09T23:52:10 CET" name="Test" finished-at="2022-02-09T23:52:13 CET" duration-ms="3114">
       <class name="zipCode.indianZipCode">
-        <test-method signature="zipDENrw()[pri:0, instance:zipCode.indianZipCode@52af26ee]" started-at="2022-02-09T21:56:48 CET" name="zipDENrw" finished-at="2022-02-09T21:56:50 CET" duration-ms="2458" status="PASS">
+        <test-method signature="zipDENrw()[pri:0, instance:zipCode.indianZipCode@4f2b503c]" started-at="2022-02-09T23:52:10 CET" name="zipDENrw" finished-at="2022-02-09T23:52:13 CET" duration-ms="3081" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- zipDENrw -->
-        <test-method signature="sameCityAPI(java.lang.String)[pri:0, instance:zipCode.indianZipCode@52af26ee]" started-at="2022-02-09T21:56:50 CET" name="sameCityAPI" finished-at="2022-02-09T21:56:50 CET" duration-ms="292" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[birmingham,UK]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sameCityAPI -->
       </class> <!-- zipCode.indianZipCode -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

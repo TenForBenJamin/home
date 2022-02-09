@@ -8,7 +8,7 @@
       	<methods>
            			<parameter name="siu" value="birmingham,UK"></parameter>
 	      		<include name="zipDENrw"></include>
-	      		<include name="sameCityAPI"></include>
+	      		
 	        </methods>
       </class>
     </classes>
@@ -20,9 +20,11 @@
       	<methods>
       	<parameter name="lines" value="-2"></parameter>
       <parameter name="ilat" value="51"></parameter>
-      			
-	      		
+      			<include name="zipDENrw"></include>
+	      		responseBodyvalidator
+	      		resBodyBase
 	      		<include name="zipDENrw"></include>
+	      		<include name="resBodyBase"></include>
 	        </methods>
       </class>
     </classes>

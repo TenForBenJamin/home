@@ -7,4 +7,5 @@ public class parama
 	public String zipUSTulsa="74015,US";
 	public String zipDENrw="50676,DE";
 	public String zipDEBodersee="37434,DE";
+	public String f95="40474,DE";
 }

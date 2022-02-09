@@ -4,8 +4,9 @@
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="zipCode.indianZipCode">
+        <parameter name="siu" value="birmingham,UK"/>
         <methods>
-          <include name="zipDENrw"/>
+          <include name="resBodyBase" invocation-numbers="0"/>
         </methods>
       </class> <!-- zipCode.indianZipCode -->
     </classes>

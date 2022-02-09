@@ -1,6 +1,8 @@
 package zipCode;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.*;
+import static org.testng.Assert.assertEquals;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -85,13 +87,13 @@ public class indianZipCode  extends parama
 	public void zipDENrw ()
 	{
 		
-		String lines=zipDENrw;
+		String zip=f95;
 //		@Parameters({"siu"})
 		//2b1fd2d7f77ccf1b7de9b441571b39b8"
 		RestAssured.baseURI ="https://api.openweathermap.org";
 		String jagah =
 		given().log().all().
-		queryParam("zip", zipDEBodersee).
+		queryParam("zip", zip).
 		queryParam("appid", apiKey).
 		queryParam("lang", "de").queryParam("units", "metric").
 		when().get("data/2.5/weather").
@@ -119,14 +121,7 @@ public class indianZipCode  extends parama
 		queryParam("lang", "de").queryParam("units", "metric").
 		when().get("data/2.5/weather").
 		then().assertThat().statusCode(401).extract().response().asString();
-		
-		
-		
 	}
-
-	
-	
-	
 	
 	@Parameters({"siu"})
 	@Test
@@ -144,6 +139,46 @@ public class indianZipCode  extends parama
 		DycheBall sd = new DycheBall();
 		sd.coordsExtractor(jagah);
 	}
+	@Parameters({"siu"})
+	@Test
+	public void responseBodyvalidator (String siu)
+	{
+		RestAssured.baseURI ="https://api.openweathermap.org";
+		given().log().all().
+		queryParam("q", siu).
+		queryParam("appid", "2b1fd2d7f77ccf1b7de9b441571b39b8")
+		.queryParam("units", "metric").
+		when().get("data/2.5/weather").
+		then().assertThat()
+		.statusCode(200).
+		body("base", equalTo("station"));
+		
+//		JsonPath js = new JsonPath(jagah);
+//		DycheBall sd = new DycheBall();
+//		sd.coordsExtractor(jagah);
+	}
+	
+	@Parameters({"siu"})
+	@Test
+	public void resBodyBase(String siu) 
+	{
+		
+		String s =
+				given().log().all().
+				queryParam("q", siu).
+				queryParam("appid", apiKey).
+				queryParam("lang", "de").queryParam("units", "metric").
+				when().get("data/2.5/weather").
+				then().assertThat().statusCode(200).extract().response().asString();		
+		DycheBall sd = new DycheBall();
+		String b=sd.baseEx(s);
+		
+				//assertEquals(b, "stations");
+				System.out.println(b);
+	}
+	
+	
+	
 	public void latLoner ()
 	{
 		String ilat="49";
