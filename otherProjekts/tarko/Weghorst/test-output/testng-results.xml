@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-09T01:05:13 CET" name="Suite" finished-at="2022-02-09T01:05:16 CET" duration-ms="2993">
+    <groups>
+    </groups>
+    <test started-at="2022-02-09T01:05:13 CET" name="Test" finished-at="2022-02-09T01:05:16 CET" duration-ms="2993">
+      <class name="zipCode.indianZipCode">
+        <test-method signature="hardCodeZip()[pri:0, instance:zipCode.indianZipCode@58695725]" started-at="2022-02-09T01:05:13 CET" name="hardCodeZip" finished-at="2022-02-09T01:05:15 CET" duration-ms="2246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hardCodeZip -->
+        <test-method signature="inwalahidApiKey401()[pri:0, instance:zipCode.indianZipCode@58695725]" started-at="2022-02-09T01:05:15 CET" name="inwalahidApiKey401" finished-at="2022-02-09T01:05:15 CET" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inwalahidApiKey401 -->
+        <test-method signature="zipUSOklahama()[pri:0, instance:zipCode.indianZipCode@58695725]" started-at="2022-02-09T01:05:15 CET" name="zipUSOklahama" finished-at="2022-02-09T01:05:16 CET" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zipUSOklahama -->
+      </class> <!-- zipCode.indianZipCode -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
