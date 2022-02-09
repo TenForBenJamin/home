@@ -96,14 +96,14 @@ public class indianZipCode  extends parama
 		queryParam("lang", "de").queryParam("units", "metric").
 		when().get("data/2.5/weather").
 		then().assertThat().statusCode(200).extract().response().asString();
-		
-		System.out.println("/n");
 		System.out.println("\n");
 		JsonPath js = new JsonPath(jagah);
 		DycheBall sd = new DycheBall();
 		sd.coordsExtractor(jagah);
 		
 	}
+	
+	
 	@Test
 	public void inwalahidApiKey401 ()
 	{
@@ -128,36 +128,22 @@ public class indianZipCode  extends parama
 	
 	
 	
-	public void jenkinerStrasse ()
+	@Parameters({"siu"})
+	@Test
+	public void sameCityAPI (String siu)
 	{
-		
-		//Xls_Reader r= new Xls_Reader("H:\\vsos\\TenForBen.github.io\\EdisonLogs\\weather.xlsx");
-		//int gw=gameweek;	
-		String snj ="lonMan";
-		System.out.println("SheetUsed - " +snj);	
-		//int  LR =  r.getLastRwoNum(snj);
-		//System.out.println("The last row by method  " + LR);
-		//int LRs=LR+1;
-		//System.out.println("The last row count is LRs " + LRs);
-		String place ="almaty";
-		System.out.println("Coords are            ~       " + place);
-		String[] latestPoints = place.split(" ");
-		//String fp=latestPoints[2];
-		String slat=latestPoints[2];
-		String slon=latestPoints[5];
-		System.out.println("slat " +slat +" slon "   + slon);
-		Double intslat =Double.parseDouble(slat);
-		//intslat=intslat+1;
-		Double intslon =Double.parseDouble(slon);
-		intslon=intslon+1;
-		String StringSlat=String.valueOf(intslat);
-		String StringSlon=String.valueOf(intslon);
-		//latLoner(StringSlon,StringSlat);
-		
-		
+		RestAssured.baseURI ="https://api.openweathermap.org";
+		String jagah =given().log().all().
+		queryParam("q", siu).
+		queryParam("appid", "2b1fd2d7f77ccf1b7de9b441571b39b8")
+		.queryParam("units", "metric").
+		when().get("data/2.5/weather").
+		then().assertThat().statusCode(200).extract().response().asString();
+		System.out.println("\n");
+		JsonPath js = new JsonPath(jagah);
+		DycheBall sd = new DycheBall();
+		sd.coordsExtractor(jagah);
 	}
-	
-	
 	public void latLoner ()
 	{
 		String ilat="49";

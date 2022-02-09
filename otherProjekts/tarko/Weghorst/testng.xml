@@ -6,9 +6,9 @@
       
       <class name="zipCode.indianZipCode">
       	<methods>
-           			
+           			<parameter name="siu" value="birmingham,UK"></parameter>
 	      		<include name="zipDENrw"></include>
-	      		<include name="zipUSOklahama"></include>
+	      		<include name="sameCityAPI"></include>
 	        </methods>
       </class>
     </classes>
