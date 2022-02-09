@@ -3,7 +3,28 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="zipCode.indianZipCode"/>
+      
+      <class name="zipCode.indianZipCode">
+      	<methods>
+           			
+	      		<include name="zipDENrw"></include>
+	      		<include name="zipUSOklahama"></include>
+	        </methods>
+      </class>
     </classes>
   </test> <!-- Test -->
-</suite> <!-- Suite -->
+</suite> <!-- Su
+<classes>
+      <class name="zipCode.indianZipCode"/>
+      <class name="biya.acharya">
+      	<methods>
+      	<parameter name="lines" value="-2"></parameter>
+      <parameter name="ilat" value="51"></parameter>
+      			
+	      		
+	      		<include name="zipDENrw"></include>
+	        </methods>
+      </class>
+    </classes>
+
+ite -->

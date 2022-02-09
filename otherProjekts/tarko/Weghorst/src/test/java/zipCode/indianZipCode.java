@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import objectRepo.parama;
-
+import burnley.DycheBall;
 
 public class indianZipCode  extends parama
 {
@@ -75,26 +75,33 @@ public class indianZipCode  extends parama
 		System.out.println("/n");
 		System.out.println("\n");
 		JsonPath js = new JsonPath(jagah);
-		String dt = js.getString("dt");
-		int ddt=Integer.parseInt(dt);
-		System.out.println("Raw date is   " + dt);
-		//java.util.Date time = new java.util.Date(dt);
-		java.util.Date time=new java.util.Date((long)ddt*1000);
-		System.out.println(" beutified date is  " + time);
-		String asliJagah=js.getString("name");
-		System.out.println("extracted place for  ZipCode " +zipUSTulsa +" is " +asliJagah);
-		//double count = js.getInt("main.temp");
-		System.out.println("in");
-		System.out.println("\n");
-		String coundry = js.getString("sys.country");
-		String rlat = js.getString("coord.lat");
-		String rlon = js.getString("coord.lon");
-		System.out.println("                                the  Nation of    " +coundry + "\r\n");
-		double count = js.getDouble("main.temp");
-		String mainTemp = js.getString("main.temp");
-		System.out.println("\n");
-		System.out.println("                                currentTemp   "+count + "\r\n");
+		DycheBall sd = new DycheBall();
+		sd.coordsExtractor(jagah);
 //		
+		
+	}
+	
+	@Test
+	public void zipDENrw ()
+	{
+		
+		String lines=zipDENrw;
+//		@Parameters({"siu"})
+		//2b1fd2d7f77ccf1b7de9b441571b39b8"
+		RestAssured.baseURI ="https://api.openweathermap.org";
+		String jagah =
+		given().log().all().
+		queryParam("zip", zipDEBodersee).
+		queryParam("appid", apiKey).
+		queryParam("lang", "de").queryParam("units", "metric").
+		when().get("data/2.5/weather").
+		then().assertThat().statusCode(200).extract().response().asString();
+		
+		System.out.println("/n");
+		System.out.println("\n");
+		JsonPath js = new JsonPath(jagah);
+		DycheBall sd = new DycheBall();
+		sd.coordsExtractor(jagah);
 		
 	}
 	@Test
