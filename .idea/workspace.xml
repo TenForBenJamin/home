@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a59965c-d556-47c9-bf84-aa676a640201" name="Changes" comment="home-erSimpson" />
+    <list default="true" id="3a59965c-d556-47c9-bf84-aa676a640201" name="Changes" comment="bodersee" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +63,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655299957929</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="bodersee">
+      <created>1655301089899</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655301089899</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -80,6 +87,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="home-erSimpson" />
-    <option name="LAST_COMMIT_MESSAGE" value="home-erSimpson" />
+    <MESSAGE value="bodersee" />
+    <option name="LAST_COMMIT_MESSAGE" value="bodersee" />
   </component>
 </project>
